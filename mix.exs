@@ -9,7 +9,7 @@ defmodule PureHTTP.Mixfile do
     [
       app: :pure_http,
       version: @version,
-      elixir: "~> 1.5",
+      elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env),
       start_permanent: Mix.env == :prod,
       description: description(),
@@ -37,7 +37,7 @@ defmodule PureHTTP.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.6.0"},
+      {:httpoison, "~> 1.7.0"},
 
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
